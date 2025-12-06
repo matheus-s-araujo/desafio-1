@@ -1,0 +1,13 @@
+.sales-list {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.seller_performance-comission {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  border: 1px solid black;
+}

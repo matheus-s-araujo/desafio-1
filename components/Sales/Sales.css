@@ -1,5 +1,12 @@
-.sale-item {
-  width: 100%;
-  display: block;
+.sales-list__sale {
+  padding: 0 15px;
+  width: auto;
+  height: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid black;
+}
+
+.sales-list__sale-commission {
+
 }

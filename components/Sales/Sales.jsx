@@ -1,32 +1,13 @@
 import "./Sales.css";
+import { commissionCalculate } from '../../src/utils/commissionCalculate'
 
-function commissionCalculate(value) {
-  if (value < 100) {
-    return {
-      percentual: 0,
-      comissao: 0,
-    };
-  }
-
-  if (value < 500) {
-    return {
-      percentual: 1,
-      comissao: value * 0.01,
-    };
-  }
-
-  return {
-    percentual: 5,
-    comissao: value * 0.05,
-  };
-}
 
 const Sales = ({ sale, index }) => {
   const { percentual, comissao } = commissionCalculate(sale.valor);
 
   return (
     <li key={index} className="sales-list__sale">
-      <p className="sales-list__sale-value">Valor: R$ {sale.valor}</p>
+      <p className="sales-list__sale-value">Valor da venda: R$ {sale.valor}</p>
 
       {percentual > 0 ? (
         <div className="sales-list__sale-commission">
