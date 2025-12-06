@@ -1,7 +1,7 @@
 import "./Sellers.css";
 import Sales from "../Sales/Sales";
 import { useState } from "react";
-import { commissionCalculate } from '../../src/utils/commissionCalculate'
+import { commissionCalculate } from "../../src/utils/commissionCalculate";
 
 const Sellers = ({ allSales }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,26 +12,27 @@ const Sellers = ({ allSales }) => {
   }, 0);
 
   return (
-    <div className="seller_performance">
-      <h2
-        className="seller_performance-name"
-        onClick={() => setIsOpen(prev => !prev)}
+    <div className="seller-performance">
+      <div
+        className="seller-performance_person"
+        onClick={() => setIsOpen((prev) => !prev)}
         style={{ cursor: "pointer" }}
       >
-        {allSales.vendedor}
-      </h2>
+        <h2 className="seller-performance_person-name">{allSales.vendedor}</h2>
+
+        <div className="seller-performance_person-comission">
+          <span>Comissão Total</span>
+          <span>R$ {totalComissao.toFixed(2)}</span>
+        </div>
+      </div>
 
       {isOpen && (
-        <ul className="sales-list">
+        <ul className="seller-performance_person-sales-list">
           {allSales.vendas.map((sale, index) => (
             <Sales sale={sale} index={index} key={index} />
           ))}
         </ul>
       )}
-
-      <p className="seller_performance-comission">
-        Total ganho de comissão: R$ {totalComissao.toFixed(2)}
-      </p>
     </div>
   );
 };

@@ -1,12 +1,27 @@
 .sales-list__sale {
-  padding: 0 15px;
+  padding: 0 25px;
   width: auto;
   height: 85px;
+  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
 }
 
 .sales-list__sale-commission {
+  display: flex;
+  justify-content: space-between;
+}
 
+.sales-list__sale-commission-percentage {
+  color: #2563eb;
+}
+
+.sales-list__sale-comission-value {
+  color: #059669;
+}
+
+.sales-list__sale-no-commission {
+  color: rgb(255, 78, 78);
 }

@@ -7,16 +7,16 @@ const Sales = ({ sale, index }) => {
 
   return (
     <li key={index} className="sales-list__sale">
-      <p className="sales-list__sale-value">Valor da venda: R$ {sale.valor}</p>
+      <p className="sales-list__sale-value">Venda R$ {sale.valor}</p>
 
       {percentual > 0 ? (
         <div className="sales-list__sale-commission">
           <p className="sales-list__sale-commission-percentage">
-            Comissão: {percentual}%
+            Comissão {percentual}%
           </p>
 
           <p className="sales-list__sale-comission-value">
-            Valor da comissão: R$ {comissao.toFixed(2)}
+            Ganho R$ {comissao.toFixed(2)}
           </p>
         </div>
       ) : (

@@ -1,7 +1,36 @@
-.sales-list {
+.seller-performance {
+  padding: 0 60px;
+  margin: 20px 0;
+  border: 2px solid #94a3b8;
+  border-radius: 10px;
+}
+
+.seller-performance_person {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seller-performance_person-comission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #d7ffec;
+  color: #044e39;
+}
+
+.seller-performance_person-sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   width: 100%;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .seller_performance-comission {
