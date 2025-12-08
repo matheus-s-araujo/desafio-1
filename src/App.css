@@ -10,5 +10,16 @@ body {
 }
 
 .App__title {
+  font-size: 50px;
   text-align: center;
+  color: #059669;
+}
+
+.App__subtitle {
+  margin: 0;
+  font-size: 35px;
+}
+
+.App__text {
+  color: rgb(107, 107, 107);
 }

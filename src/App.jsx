@@ -35,7 +35,9 @@ const salesArray = allSales.reduce((acc, sale) => {
 
 const App = () => (
   <section className="App">
-    <h1 className="App__title">Vendas e comissões</h1>
+    <h1 className="App__title">Comissões</h1>
+    <h2 className="App__subtitle">Visão Geral da Equipe</h2>
+    <p className="App__text">Acompanhe todos os vendedores, suas vendas e o total de comissão acumulada.</p>
 
     {salesArray.map((seller, index) => (
       <Sellers key={index} allSales={seller} />

@@ -9,9 +9,19 @@
   border-radius: 8px;
 }
 
-.sales-list__sale-commission {
+.sales-info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sales-info__text {
+  margin: 0;
+}
+
+.sales-list__sale-commission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .sales-list__sale-commission-percentage {
@@ -25,3 +35,4 @@
 .sales-list__sale-no-commission {
   color: rgb(255, 78, 78);
 }
+

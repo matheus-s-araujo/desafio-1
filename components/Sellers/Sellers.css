@@ -1,8 +1,16 @@
 .seller-performance {
   padding: 0 60px;
   margin: 20px 0;
-  border: 2px solid #94a3b8;
+  border: 2px solid #b0c1d8;
   border-radius: 10px;
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.seller-performance:hover {
+  transform: translateY(-2px); /* levanta um pouquinho */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .seller-performance_person {
@@ -31,6 +39,7 @@
   width: 100%;
   padding: 0;
   margin-bottom: 15px;
+  transition: max-height 0.45s ease, opacity 0.3s ease;
 }
 
 .seller_performance-comission {
